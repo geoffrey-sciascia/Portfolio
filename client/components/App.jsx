@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from 'react'
 
 import { fetchGreetings } from '../api'
+import Info from './Info'
 
 function App () {
   const [messages, setMessages] = useState([])
@@ -12,10 +13,11 @@ function App () {
 
   return (
     <div className='app-container'>
-      <h1 className='app-title'>Hello World!</h1>
+      <h1 className='app-title'>My Dev Portfolio!</h1>
       <ul>
         {messages.map(m => <li key={m.id}>{m.text} 👋</li>)}
       </ul>
+      <Info />
     </div>
   )
 }
