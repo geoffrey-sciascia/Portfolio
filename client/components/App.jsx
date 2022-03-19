@@ -7,6 +7,7 @@ function App () {
   const [messages, setMessages] = useState([])
 
   useEffect(() => {
+    // eslint-disable-next-line promise/catch-or-return
     fetchGreetings()
       .then(greetings => setMessages(greetings))
   }, [])
