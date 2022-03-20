@@ -10,8 +10,8 @@ module.exports = {
   module: {
     rules: [{
       test: /\.jsx?$/,
-      loader: 'babel-loader'
-      // exclude: /node_modules/
+      loader: 'babel-loader',
+      exclude: /node_modules/
     }]
   },
   resolve: {
@@ -19,3 +19,9 @@ module.exports = {
   },
   devtool: 'source-map'
 }
+
+// ,
+//     {
+//       test: /\.(sass|less|css)$/,
+//       loaders: ['style-loader', 'css-loader', 'less-loader']
+//     }
