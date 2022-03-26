@@ -3,6 +3,7 @@ exports.up = function (knex) {
     table.increments('id')
     table.string('greeting')
     table.string('language')
+    table.string('pronounciation')
   })
 }
 
