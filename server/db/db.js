@@ -1,11 +1,11 @@
 const config = require('./knexfile').development
-const connection = require('knex')(config)
+const db = require('knex')(config)
 
-function getAllGreetings (db = connection) {
-  return db('greetings')
+function sayHello () {
+  return db('hello')
     .select()
 }
 
 module.exports = {
-  getAllGreetings
+  sayHello
 }
