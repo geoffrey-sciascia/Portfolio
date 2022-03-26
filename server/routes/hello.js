@@ -5,7 +5,7 @@ const db = require('../db/db')
 const router = express.Router()
 
 router.get('/', (req, res) => {
-  db.getAllGreetings()
+  db.sayHello()
     .then(welcomes => {
       return res.json(welcomes)
     })

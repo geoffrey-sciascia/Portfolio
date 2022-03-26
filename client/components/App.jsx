@@ -16,7 +16,7 @@ function App () {
     <div className='app-container'>
       <h1 className='app-title'>My Dev Portfolio!</h1>
       <ul>
-        {messages.map(m => <li key={m.id}>{m.text} 👋</li>)}
+        {messages.map(m => <li key={m.id}>{m.greeting} ({m.pronounciation}) esteemed visitor! 👋 ({m.language})</li>)}
       </ul>
       <Info />
     </div>
